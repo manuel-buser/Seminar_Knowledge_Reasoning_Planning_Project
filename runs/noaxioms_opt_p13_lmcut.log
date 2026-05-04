@@ -1,0 +1,122 @@
+INFO     planner time limit: 300s
+INFO     planner memory limit: 4096 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299s
+INFO     translator memory limit: 4096 MB
+INFO     translator command line string: /usr/bin/python3 /home/buser/planopt/planopt-hs25/demo/fast-downward/builds/release/bin/translate/translate.py /home/buser/KRP_Project/Spider_NoAxioms/domain.pddl /home/buser/KRP_Project/Spider_NoAxioms/instances/opt_p13.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.009s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.000s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.003s wall-clock]
+Generated 129 rules.
+Computing model... [0.720s CPU, 0.721s wall-clock]
+46199 relevant atoms
+40568 auxiliary atoms
+86767 final queue length
+290421 total queue pushes
+Completing instantiation... [2.940s CPU, 2.945s wall-clock]
+Instantiating: [3.700s CPU, 3.700s wall-clock]
+Computing fact groups...
+Finding invariants...
+28 initial candidates
+Finding invariants: [0.010s CPU, 0.009s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.002s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+676 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.000s CPU, 0.002s wall-clock]
+Computing fact groups: [0.020s CPU, 0.020s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Processing axioms: [0.160s CPU, 0.160s wall-clock]
+Translating task: [3.570s CPU, 3.564s wall-clock]
+66170 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+49 propositions removed
+Detecting unreachable propositions: [1.760s CPU, 1.769s wall-clock]
+Reordering and filtering variables...
+704 of 707 variables necessary.
+0 of 37 mutex groups necessary.
+44157 of 44157 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.980s CPU, 0.974s wall-clock]
+Translator variables: 704
+Translator derived variables: 0
+Translator facts: 2123
+Translator goal facts: 44
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 44157
+Translator axioms: 0
+Translator task size: 636088
+Translator peak memory: 339416 KB
+Writing output... [0.590s CPU, 0.593s wall-clock]
+Done! [10.750s CPU, 10.751s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 289s
+INFO     search memory limit: 4096 MB
+INFO     search command line string: /home/buser/planopt/planopt-hs25/demo/fast-downward/builds/release/bin/downward --search 'astar(lmcut())' --internal-plan-file /home/buser/KRP_Project/runs/noaxioms_opt_p13_lmcut.plan < output.sas
+[t=0.000000s, 14580 KB] reading input...
+[t=0.376006s, 36936 KB] done reading input!
+[t=0.416007s, 54764 KB] Initializing landmark cut heuristic...
+[t=0.416007s, 54764 KB] Building successor generator...done!
+[t=0.440002s, 62340 KB] peak memory difference for successor generator creation: 7576 KB
+[t=0.440002s, 62340 KB] time for successor generation creation: 0.023995s
+[t=0.440002s, 62340 KB] Variables: 704
+[t=0.440002s, 62340 KB] FactPairs: 2123
+[t=0.440002s, 62340 KB] Bytes per state: 108
+[t=0.440002s, 62340 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.476007s, 62340 KB] New best heuristic value for lmcut: 11
+[t=0.476007s, 62340 KB] g=0, 1 evaluated, 0 expanded
+[t=0.476007s, 62340 KB] f = 11, 1 evaluated, 0 expanded
+[t=0.476007s, 62340 KB] Initial heuristic value for lmcut: 11
+[t=0.476007s, 62340 KB] pruning method: none
+[t=0.544006s, 62340 KB] New best heuristic value for lmcut: 10
+[t=0.544006s, 62340 KB] g=1, 3 evaluated, 1 expanded
+[t=0.612013s, 62340 KB] New best heuristic value for lmcut: 9
+[t=0.612013s, 62340 KB] g=1, 6 evaluated, 1 expanded
+[t=0.816006s, 62340 KB] f = 12, 13 evaluated, 8 expanded
+[t=1.232018s, 62340 KB] f = 13, 27 evaluated, 14 expanded
+[t=2.007943s, 62340 KB] f = 14, 54 evaluated, 39 expanded
+[t=3.395927s, 62340 KB] f = 15, 100 evaluated, 74 expanded
+[t=7.195828s, 62340 KB] New best heuristic value for lmcut: 8
+[t=7.195828s, 62340 KB] g=5, 227 evaluated, 169 expanded
+[t=9.547697s, 62340 KB] f = 16, 307 evaluated, 230 expanded
+[t=14.967375s, 62340 KB] New best heuristic value for lmcut: 7
+[t=14.967375s, 62340 KB] g=5, 487 evaluated, 389 expanded
+[t=15.787342s, 62340 KB] f = 17, 517 evaluated, 413 expanded
+[t=27.298649s, 62340 KB] f = 18, 910 evaluated, 708 expanded
+[t=43.169936s, 62340 KB] f = 19, 1485 evaluated, 1147 expanded, 8 reopened
+[t=86.315506s, 62340 KB] f = 20, 3006 evaluated, 2260 expanded, 20 reopened
+[t=90.963277s, 62340 KB] New best heuristic value for lmcut: 6
+[t=90.963277s, 62340 KB] g=12, 3195 evaluated, 2364 expanded, 20 reopened
+[t=169.163312s, 62340 KB] f = 21, 6241 evaluated, 4627 expanded, 67 reopened
+Peak memory: 62340 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+Remove intermediate file output.sas
+search exit code: 23
+
+Driver aborting after search
+INFO     Planner time: 300.04s

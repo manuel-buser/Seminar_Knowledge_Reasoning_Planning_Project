@@ -1,0 +1,264 @@
+INFO     planner time limit: 300s
+INFO     planner memory limit: 4096 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299s
+INFO     translator memory limit: 4096 MB
+INFO     translator command line string: /usr/bin/python3 /home/buser/planopt/planopt-hs25/demo/fast-downward/builds/release/bin/translate/translate.py /home/buser/KRP_Project/Spider_NoAxioms/domain.pddl /home/buser/KRP_Project/Spider_NoAxioms/instances/opt_p03.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.007s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 129 rules.
+Computing model... [0.160s CPU, 0.154s wall-clock]
+10532 relevant atoms
+10607 auxiliary atoms
+21139 final queue length
+69225 total queue pushes
+Completing instantiation... [0.580s CPU, 0.577s wall-clock]
+Instantiating: [0.750s CPU, 0.742s wall-clock]
+Computing fact groups...
+Finding invariants...
+28 initial candidates
+Finding invariants: [0.010s CPU, 0.011s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+301 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.010s CPU, 0.016s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Processing axioms: [0.040s CPU, 0.039s wall-clock]
+Translating task: [0.800s CPU, 0.806s wall-clock]
+13534 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+29 propositions removed
+Detecting unreachable propositions: [0.540s CPU, 0.535s wall-clock]
+Reordering and filtering variables...
+316 of 318 variables necessary.
+0 of 21 mutex groups necessary.
+9645 of 9645 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.240s CPU, 0.231s wall-clock]
+Translator variables: 316
+Translator derived variables: 0
+Translator facts: 893
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 9645
+Translator axioms: 0
+Translator task size: 148112
+Translator peak memory: 106228 KB
+Writing output... [0.150s CPU, 0.150s wall-clock]
+Done! [2.520s CPU, 2.515s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 297s
+INFO     search memory limit: 4096 MB
+INFO     search command line string: /home/buser/planopt/planopt-hs25/demo/fast-downward/builds/release/bin/downward --search 'astar(lmcut())' --internal-plan-file /home/buser/KRP_Project/runs/noaxioms_opt_p03_lmcut.plan < output.sas
+[t=0.000000s, 14580 KB] reading input...
+[t=0.083975s, 19584 KB] done reading input!
+[t=0.095988s, 24016 KB] Initializing landmark cut heuristic...
+[t=0.095988s, 24016 KB] Building successor generator...done!
+[t=0.103976s, 25688 KB] peak memory difference for successor generator creation: 1672 KB
+[t=0.103976s, 25688 KB] time for successor generation creation: 0.007989s
+[t=0.103976s, 25688 KB] Variables: 316
+[t=0.103976s, 25688 KB] FactPairs: 893
+[t=0.103976s, 25688 KB] Bytes per state: 48
+[t=0.103976s, 25688 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.107985s, 25688 KB] New best heuristic value for lmcut: 6
+[t=0.107985s, 25688 KB] g=0, 1 evaluated, 0 expanded
+[t=0.107985s, 25688 KB] f = 6, 1 evaluated, 0 expanded
+[t=0.107985s, 25688 KB] Initial heuristic value for lmcut: 6
+[t=0.107985s, 25688 KB] pruning method: none
+[t=0.132186s, 25688 KB] f = 7, 6 evaluated, 1 expanded
+[t=0.143989s, 25688 KB] f = 8, 8 evaluated, 3 expanded
+[t=0.239982s, 25688 KB] New best heuristic value for lmcut: 5
+[t=0.239982s, 25688 KB] g=2, 36 evaluated, 20 expanded
+[t=0.280000s, 25688 KB] New best heuristic value for lmcut: 4
+[t=0.283982s, 25688 KB] g=4, 50 evaluated, 27 expanded
+[t=0.328055s, 25688 KB] f = 9, 68 evaluated, 34 expanded
+[t=0.895974s, 25688 KB] f = 10, 247 evaluated, 170 expanded, 2 reopened
+[t=1.015977s, 25688 KB] New best heuristic value for lmcut: 3
+[t=1.015977s, 25688 KB] g=7, 293 evaluated, 197 expanded, 2 reopened
+[t=1.764002s, 25688 KB] f = 11, 540 evaluated, 391 expanded, 2 reopened
+[t=3.255893s, 25688 KB] f = 12, 1038 evaluated, 785 expanded, 10 reopened
+[t=5.603825s, 25688 KB] f = 13, 1837 evaluated, 1435 expanded, 12 reopened
+[t=9.479707s, 25688 KB] f = 14, 3162 evaluated, 2466 expanded, 17 reopened
+[t=14.955690s, 25688 KB] f = 15, 5096 evaluated, 3992 expanded, 26 reopened
+[t=16.283763s, 25688 KB] New best heuristic value for lmcut: 2
+[t=16.283763s, 25688 KB] g=10, 5617 evaluated, 4466 expanded, 26 reopened
+[t=21.871519s, 25688 KB] f = 16, 7549 evaluated, 6109 expanded, 36 reopened
+[t=31.967359s, 25688 KB] f = 17, 11206 evaluated, 9126 expanded, 54 reopened
+[t=42.346913s, 25968 KB] f = 18, 15035 evaluated, 12370 expanded, 70 reopened
+[t=54.374412s, 26432 KB] f = 19, 19639 evaluated, 16163 expanded, 108 reopened
+[t=67.433998s, 26704 KB] f = 20, 24413 evaluated, 20019 expanded, 130 reopened
+[t=81.525280s, 27648 KB] f = 21, 29652 evaluated, 24145 expanded, 183 reopened
+[t=106.388693s, 28184 KB] f = 22, 41774 evaluated, 32461 expanded, 622 reopened
+[t=107.048691s, 28184 KB] New best heuristic value for lmcut: 1
+[t=107.048691s, 28184 KB] g=21, 42847 evaluated, 33061 expanded, 622 reopened
+[t=107.060800s, 28184 KB] New best heuristic value for lmcut: 0
+[t=107.060800s, 28184 KB] g=22, 42881 evaluated, 33074 expanded, 622 reopened
+[t=107.064693s, 28184 KB] Solution found!
+[t=107.064693s, 28184 KB] Actual search time: 106.956708s
+move-to-card card-d0-s3-v1 card-d0-s0-v3 card-d0-s3-v2 pile-0 (1)
+change-tableau-and-stop card-d0-s3-v1 pile-1 pile-0 (0)
+make-movable-and-stop card-d0-s0-v3 card-d0-s1-v4 (0)
+move-to-card card-d0-s1-v2 card-d0-s2-v4 card-d0-s0-v3 pile-1 (1)
+change-tableau-and-stop card-d0-s1-v2 pile-3 pile-1 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s0-v3 card-d0-s1-v4 (0)
+make-movable-and-stop card-d0-s2-v4 card-d0-s3-v3 (0)
+move-to-card card-d0-s2-v3 card-d0-s2-v1 card-d0-s2-v4 pile-3 (1)
+change-tableau-and-stop card-d0-s2-v3 pile-2 pile-3 (0)
+make-movable-and-continue card-d0-s2-v1 card-d0-s2-v2 (0)
+make-movable-and-stop card-d0-s2-v2 pile-2 (0)
+move-to-card card-d0-s2-v2 pile-2 card-d0-s2-v3 pile-3 (1)
+change-tableau-and-continue card-d0-s2-v2 pile-2 pile-3 card-d0-s2-v1 (0)
+change-tableau-and-stop card-d0-s2-v1 pile-2 pile-3 (0)
+make-movable-ignore-pile pile-2 (0)
+move-to-tableau card-d0-s2-v4 card-d0-s3-v3 pile-2 (1)
+change-tableau-and-continue card-d0-s2-v4 pile-3 pile-2 card-d0-s2-v3 (0)
+change-tableau-and-continue card-d0-s2-v3 pile-3 pile-2 card-d0-s2-v2 (0)
+change-tableau-and-continue card-d0-s2-v2 pile-3 pile-2 card-d0-s2-v1 (0)
+change-tableau-and-stop card-d0-s2-v1 pile-3 pile-2 (0)
+make-movable-and-stop card-d0-s3-v3 pile-3 (0)
+move-to-card card-d0-s3-v2 card-d0-s3-v4 card-d0-s3-v3 pile-3 (1)
+change-tableau-and-continue card-d0-s3-v2 pile-0 pile-3 card-d0-s3-v1 (0)
+change-tableau-and-stop card-d0-s3-v1 pile-0 pile-3 (0)
+make-movable-and-stop card-d0-s3-v4 card-d0-s0-v4 (0)
+start-dealing  (1)
+deal-card card-d0-s0-v0 card-d0-s1-v0 deal-0 card-d0-s3-v4 pile-0 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s3-v4 card-d0-s0-v4 (0)
+deal-card card-d0-s1-v0 card-d0-s2-v0 deal-0 card-d0-s1-v2 pile-1 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s1-v2 card-d0-s0-v3 (0)
+deal-card card-d0-s2-v0 card-d0-s3-v0 deal-0 card-d0-s2-v1 pile-2 (0)
+deal-card card-d0-s3-v0 deal-0 deal-0 card-d0-s3-v1 pile-3 (0)
+finish-dealing deal-0 deal-1 (0)
+start-collecting-deck card-d0-s2-v0 (1)
+collect-card card-d0-s2-v0 card-d0-s2-v1 pile-2 (0)
+collect-card card-d0-s2-v1 card-d0-s2-v2 pile-2 (0)
+collect-card card-d0-s2-v2 card-d0-s2-v3 pile-2 (0)
+collect-card card-d0-s2-v3 card-d0-s2-v4 pile-2 (0)
+finish-collecting-deck card-d0-s2-v4 pile-2 pile-2 (0)
+make-movable-ignore-pile pile-2 (0)
+move-to-tableau card-d0-s1-v0 card-d0-s1-v2 pile-2 (1)
+change-tableau-and-stop card-d0-s1-v0 pile-1 pile-2 (0)
+make-movable-and-stop card-d0-s1-v2 card-d0-s0-v3 (0)
+start-dealing  (1)
+deal-card card-d0-s1-v3 card-d0-s1-v1 deal-1 card-d0-s0-v0 pile-0 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s0-v0 card-d0-s3-v4 (0)
+deal-card card-d0-s1-v1 card-d0-s0-v2 deal-1 card-d0-s1-v2 pile-1 (0)
+deal-card card-d0-s0-v2 card-d0-s0-v1 deal-1 card-d0-s1-v0 pile-2 (0)
+make-unmovable-and-stop-at-tableau card-d0-s1-v0 pile-2 (0)
+deal-card card-d0-s0-v1 deal-1 deal-1 card-d0-s3-v0 pile-3 (0)
+make-unmovable-and-continue card-d0-s3-v0 card-d0-s3-v1 (0)
+make-unmovable-and-continue card-d0-s3-v1 card-d0-s3-v2 (0)
+make-unmovable-and-continue card-d0-s3-v2 card-d0-s3-v3 (0)
+make-unmovable-and-stop-at-tableau card-d0-s3-v3 pile-3 (0)
+finish-dealing deal-1 deal-2 (0)
+move-to-card card-d0-s1-v2 card-d0-s0-v3 card-d0-s1-v3 pile-0 (1)
+change-tableau-and-continue card-d0-s1-v2 pile-1 pile-0 card-d0-s1-v1 (0)
+change-tableau-and-stop card-d0-s1-v1 pile-1 pile-0 (0)
+make-movable-and-stop card-d0-s0-v3 card-d0-s1-v4 (0)
+move-to-card card-d0-s0-v2 card-d0-s1-v0 card-d0-s0-v3 pile-1 (1)
+change-tableau-and-stop card-d0-s0-v2 pile-2 pile-1 (0)
+make-movable-and-stop card-d0-s1-v0 pile-2 (0)
+move-to-card card-d0-s1-v0 pile-2 card-d0-s1-v1 pile-0 (1)
+change-tableau-and-stop card-d0-s1-v0 pile-2 pile-0 (0)
+make-movable-ignore-pile pile-2 (0)
+move-to-tableau card-d0-s0-v3 card-d0-s1-v4 pile-2 (1)
+change-tableau-and-continue card-d0-s0-v3 pile-1 pile-2 card-d0-s0-v2 (0)
+change-tableau-and-stop card-d0-s0-v2 pile-1 pile-2 (0)
+make-movable-and-stop card-d0-s1-v4 pile-1 (0)
+move-to-card card-d0-s1-v3 card-d0-s0-v0 card-d0-s1-v4 pile-1 (1)
+change-tableau-and-continue card-d0-s1-v3 pile-0 pile-1 card-d0-s1-v2 (0)
+change-tableau-and-continue card-d0-s1-v2 pile-0 pile-1 card-d0-s1-v1 (0)
+change-tableau-and-continue card-d0-s1-v1 pile-0 pile-1 card-d0-s1-v0 (0)
+change-tableau-and-stop card-d0-s1-v0 pile-0 pile-1 (0)
+make-movable-and-stop card-d0-s0-v0 card-d0-s3-v4 (0)
+move-to-card card-d0-s0-v0 card-d0-s3-v4 card-d0-s0-v1 pile-3 (1)
+change-tableau-and-stop card-d0-s0-v0 pile-0 pile-3 (0)
+make-movable-and-stop card-d0-s3-v4 card-d0-s0-v4 (0)
+move-to-card card-d0-s0-v1 card-d0-s3-v0 card-d0-s0-v2 pile-2 (1)
+change-tableau-and-continue card-d0-s0-v1 pile-3 pile-2 card-d0-s0-v0 (0)
+change-tableau-and-stop card-d0-s0-v0 pile-3 pile-2 (0)
+make-movable-and-continue card-d0-s3-v0 card-d0-s3-v1 (0)
+make-movable-and-continue card-d0-s3-v1 card-d0-s3-v2 (0)
+make-movable-and-continue card-d0-s3-v2 card-d0-s3-v3 (0)
+make-movable-and-stop card-d0-s3-v3 pile-3 (0)
+move-to-card card-d0-s3-v3 pile-3 card-d0-s3-v4 pile-0 (1)
+change-tableau-and-continue card-d0-s3-v3 pile-3 pile-0 card-d0-s3-v2 (0)
+change-tableau-and-continue card-d0-s3-v2 pile-3 pile-0 card-d0-s3-v1 (0)
+change-tableau-and-continue card-d0-s3-v1 pile-3 pile-0 card-d0-s3-v0 (0)
+change-tableau-and-stop card-d0-s3-v0 pile-3 pile-0 (0)
+make-movable-ignore-pile pile-3 (0)
+start-collecting-deck card-d0-s3-v0 (1)
+collect-card card-d0-s3-v0 card-d0-s3-v1 pile-0 (0)
+collect-card card-d0-s3-v1 card-d0-s3-v2 pile-0 (0)
+collect-card card-d0-s3-v2 card-d0-s3-v3 pile-0 (0)
+collect-card card-d0-s3-v3 card-d0-s3-v4 pile-0 (0)
+finish-collecting-deck card-d0-s3-v4 card-d0-s0-v4 pile-0 (0)
+make-movable-and-stop card-d0-s0-v4 pile-0 (0)
+move-to-card card-d0-s0-v3 pile-2 card-d0-s0-v4 pile-0 (1)
+change-tableau-and-continue card-d0-s0-v3 pile-2 pile-0 card-d0-s0-v2 (0)
+change-tableau-and-continue card-d0-s0-v2 pile-2 pile-0 card-d0-s0-v1 (0)
+change-tableau-and-continue card-d0-s0-v1 pile-2 pile-0 card-d0-s0-v0 (0)
+change-tableau-and-stop card-d0-s0-v0 pile-2 pile-0 (0)
+make-movable-ignore-pile pile-2 (0)
+start-collecting-deck card-d0-s0-v0 (1)
+collect-card card-d0-s0-v0 card-d0-s0-v1 pile-0 (0)
+collect-card card-d0-s0-v1 card-d0-s0-v2 pile-0 (0)
+collect-card card-d0-s0-v2 card-d0-s0-v3 pile-0 (0)
+collect-card card-d0-s0-v3 card-d0-s0-v4 pile-0 (0)
+finish-collecting-deck card-d0-s0-v4 pile-0 pile-0 (0)
+make-movable-ignore-pile pile-0 (0)
+start-collecting-deck card-d0-s1-v0 (1)
+collect-card card-d0-s1-v0 card-d0-s1-v1 pile-1 (0)
+collect-card card-d0-s1-v1 card-d0-s1-v2 pile-1 (0)
+collect-card card-d0-s1-v2 card-d0-s1-v3 pile-1 (0)
+collect-card card-d0-s1-v3 card-d0-s1-v4 pile-1 (0)
+finish-collecting-deck card-d0-s1-v4 pile-1 pile-1 (0)
+[t=107.064693s, 28184 KB] Plan length: 117 step(s).
+[t=107.064693s, 28184 KB] Plan cost: 22
+[t=107.064693s, 28184 KB] Expanded 33080 state(s).
+[t=107.064693s, 28184 KB] Reopened 622 state(s).
+[t=107.064693s, 28184 KB] Evaluated 42893 state(s).
+[t=107.064693s, 28184 KB] Evaluations: 42893
+[t=107.064693s, 28184 KB] Generated 48003 state(s).
+[t=107.064693s, 28184 KB] Dead ends: 6178 state(s).
+[t=107.064693s, 28184 KB] Expanded until last jump: 32461 state(s).
+[t=107.064693s, 28184 KB] Reopened until last jump: 622 state(s).
+[t=107.064693s, 28184 KB] Evaluated until last jump: 41774 state(s).
+[t=107.064693s, 28184 KB] Generated until last jump: 46814 state(s).
+[t=107.064693s, 28184 KB] Number of registered states: 42893
+[t=107.064693s, 28184 KB] Int hash set load factor: 42893/65536 = 0.654495
+[t=107.064693s, 28184 KB] Int hash set resizes: 16
+[t=107.064693s, 28184 KB] Search time: 106.960717s
+[t=107.064693s, 28184 KB] Total time: 107.064693s
+Solution found.
+Peak memory: 28184 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 109.75s

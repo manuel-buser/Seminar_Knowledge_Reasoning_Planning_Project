@@ -1,0 +1,202 @@
+INFO     planner time limit: 300s
+INFO     planner memory limit: 4096 MB
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299s
+INFO     translator memory limit: 4096 MB
+INFO     translator command line string: /usr/bin/python3 /home/buser/planopt/planopt-hs25/demo/fast-downward/builds/release/bin/translate/translate.py /home/buser/KRP_Project/Spider_NoAxioms/domain.pddl /home/buser/KRP_Project/Spider_NoAxioms/instances/opt_p01.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.017s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.010s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 129 rules.
+Computing model... [0.060s CPU, 0.056s wall-clock]
+3346 relevant atoms
+4080 auxiliary atoms
+7426 final queue length
+21468 total queue pushes
+Completing instantiation... [0.120s CPU, 0.130s wall-clock]
+Instantiating: [0.190s CPU, 0.195s wall-clock]
+Computing fact groups...
+Finding invariants...
+28 initial candidates
+Finding invariants: [0.010s CPU, 0.006s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+162 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.008s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Processing axioms: [0.010s CPU, 0.013s wall-clock]
+Translating task: [0.240s CPU, 0.243s wall-clock]
+4207 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+19 propositions removed
+Detecting unreachable propositions: [0.120s CPU, 0.116s wall-clock]
+Reordering and filtering variables...
+170 of 172 variables necessary.
+0 of 13 mutex groups necessary.
+2870 of 2870 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.070s CPU, 0.062s wall-clock]
+Translator variables: 170
+Translator derived variables: 0
+Translator facts: 454
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2870
+Translator axioms: 0
+Translator task size: 44385
+Translator peak memory: 54396 KB
+Writing output... [0.050s CPU, 0.057s wall-clock]
+Done! [0.700s CPU, 0.708s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 299s
+INFO     search memory limit: 4096 MB
+INFO     search command line string: /home/buser/planopt/planopt-hs25/demo/fast-downward/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file /home/buser/KRP_Project/runs/noaxioms_opt_p01_blind.plan < output.sas
+[t=0.000000s, 14580 KB] reading input...
+[t=0.028052s, 16040 KB] done reading input!
+[t=0.028052s, 16436 KB] Initializing blind search heuristic...
+[t=0.028052s, 16436 KB] Building successor generator...done!
+[t=0.031980s, 16828 KB] peak memory difference for successor generator creation: 392 KB
+[t=0.031980s, 16828 KB] time for successor generation creation: 0.003928s
+[t=0.031980s, 16828 KB] Variables: 170
+[t=0.031980s, 16828 KB] FactPairs: 454
+[t=0.031980s, 16828 KB] Bytes per state: 28
+[t=0.031980s, 16828 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.031980s, 16828 KB] New best heuristic value for blind: 0
+[t=0.031980s, 16828 KB] g=0, 1 evaluated, 0 expanded
+[t=0.031980s, 16828 KB] f = 0, 1 evaluated, 0 expanded
+[t=0.031980s, 16828 KB] Initial heuristic value for blind: 0
+[t=0.031980s, 16828 KB] pruning method: none
+[t=0.031980s, 16828 KB] f = 1, 4 evaluated, 1 expanded
+[t=0.031980s, 16828 KB] f = 2, 30 evaluated, 17 expanded
+[t=0.031980s, 16828 KB] f = 3, 94 evaluated, 65 expanded
+[t=0.031980s, 16828 KB] f = 4, 211 evaluated, 157 expanded
+[t=0.031980s, 16828 KB] f = 5, 418 evaluated, 313 expanded
+[t=0.031980s, 16828 KB] f = 6, 717 evaluated, 564 expanded
+[t=0.035964s, 16828 KB] f = 7, 1144 evaluated, 927 expanded
+[t=0.035964s, 16828 KB] f = 8, 1692 evaluated, 1428 expanded
+[t=0.039972s, 16828 KB] f = 9, 2362 evaluated, 2041 expanded
+[t=0.043982s, 16828 KB] f = 10, 3292 evaluated, 2832 expanded
+[t=0.047963s, 17020 KB] f = 11, 4512 evaluated, 3920 expanded
+[t=0.056008s, 17020 KB] f = 12, 5942 evaluated, 5238 expanded
+[t=0.063973s, 17156 KB] f = 13, 7405 evaluated, 6685 expanded
+[t=0.071966s, 17288 KB] f = 14, 8803 evaluated, 8109 expanded
+[t=0.075966s, 17288 KB] f = 15, 10182 evaluated, 9502 expanded
+[t=0.079964s, 17424 KB] f = 16, 11602 evaluated, 10878 expanded
+[t=0.087964s, 17424 KB] Solution found!
+[t=0.087964s, 17424 KB] Actual search time: 0.055984s
+start-dealing  (1)
+deal-card card-d0-s1-v0 card-d0-s0-v0 deal-0 card-d0-s3-v2 pile-0 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s3-v2 card-d0-s1-v2 (0)
+deal-card card-d0-s0-v0 card-d0-s3-v1 deal-0 card-d0-s2-v2 pile-1 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s2-v2 card-d0-s2-v1 (0)
+deal-card card-d0-s3-v1 deal-0 deal-0 card-d0-s0-v1 pile-2 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s0-v1 card-d0-s2-v0 (0)
+finish-dealing deal-0 deal-1 (0)
+start-dealing  (1)
+deal-card card-d0-s1-v1 card-d0-s0-v2 deal-1 card-d0-s1-v0 pile-0 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s1-v0 card-d0-s3-v2 (0)
+deal-card card-d0-s0-v2 card-d0-s3-v0 deal-1 card-d0-s0-v0 pile-1 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s0-v0 card-d0-s2-v2 (0)
+deal-card card-d0-s3-v0 deal-1 deal-1 card-d0-s3-v1 pile-2 (0)
+finish-dealing deal-1 deal-2 (0)
+move-to-card card-d0-s1-v1 card-d0-s1-v0 card-d0-s0-v2 pile-1 (1)
+change-tableau-and-stop card-d0-s1-v1 pile-0 pile-1 (0)
+make-unmovable-and-stop-at-unmovable card-d0-s0-v2 card-d0-s0-v0 (0)
+make-movable-and-stop card-d0-s1-v0 card-d0-s3-v2 (0)
+move-to-card card-d0-s1-v0 card-d0-s3-v2 card-d0-s1-v1 pile-1 (1)
+change-tableau-and-stop card-d0-s1-v0 pile-0 pile-1 (0)
+make-movable-and-stop card-d0-s3-v2 card-d0-s1-v2 (0)
+move-to-card card-d0-s3-v1 card-d0-s0-v1 card-d0-s3-v2 pile-0 (1)
+change-tableau-and-continue card-d0-s3-v1 pile-2 pile-0 card-d0-s3-v0 (0)
+change-tableau-and-stop card-d0-s3-v0 pile-2 pile-0 (0)
+make-movable-and-stop card-d0-s0-v1 card-d0-s2-v0 (0)
+start-collecting-deck card-d0-s3-v0 (1)
+collect-card card-d0-s3-v0 card-d0-s3-v1 pile-0 (0)
+collect-card card-d0-s3-v1 card-d0-s3-v2 pile-0 (0)
+finish-collecting-deck card-d0-s3-v2 card-d0-s1-v2 pile-0 (0)
+make-movable-and-stop card-d0-s1-v2 pile-0 (0)
+move-to-card card-d0-s1-v1 card-d0-s0-v2 card-d0-s1-v2 pile-0 (1)
+change-tableau-and-continue card-d0-s1-v1 pile-1 pile-0 card-d0-s1-v0 (0)
+change-tableau-and-stop card-d0-s1-v0 pile-1 pile-0 (0)
+make-movable-and-stop card-d0-s0-v2 card-d0-s0-v0 (0)
+start-collecting-deck card-d0-s1-v0 (1)
+collect-card card-d0-s1-v0 card-d0-s1-v1 pile-0 (0)
+collect-card card-d0-s1-v1 card-d0-s1-v2 pile-0 (0)
+finish-collecting-deck card-d0-s1-v2 pile-0 pile-0 (0)
+make-movable-ignore-pile pile-0 (0)
+move-to-tableau card-d0-s0-v2 card-d0-s0-v0 pile-0 (1)
+change-tableau-and-stop card-d0-s0-v2 pile-1 pile-0 (0)
+make-movable-and-stop card-d0-s0-v0 card-d0-s2-v2 (0)
+move-to-card card-d0-s0-v1 card-d0-s2-v0 card-d0-s0-v2 pile-0 (1)
+change-tableau-and-stop card-d0-s0-v1 pile-2 pile-0 (0)
+make-movable-and-stop card-d0-s2-v0 pile-2 (0)
+move-to-card card-d0-s0-v0 card-d0-s2-v2 card-d0-s0-v1 pile-0 (1)
+change-tableau-and-stop card-d0-s0-v0 pile-1 pile-0 (0)
+make-movable-and-stop card-d0-s2-v2 card-d0-s2-v1 (0)
+start-collecting-deck card-d0-s0-v0 (1)
+collect-card card-d0-s0-v0 card-d0-s0-v1 pile-0 (0)
+collect-card card-d0-s0-v1 card-d0-s0-v2 pile-0 (0)
+finish-collecting-deck card-d0-s0-v2 pile-0 pile-0 (0)
+make-movable-ignore-pile pile-0 (0)
+move-to-tableau card-d0-s2-v2 card-d0-s2-v1 pile-0 (1)
+change-tableau-and-stop card-d0-s2-v2 pile-1 pile-0 (0)
+make-movable-and-stop card-d0-s2-v1 pile-1 (0)
+move-to-card card-d0-s2-v1 pile-1 card-d0-s2-v2 pile-0 (1)
+change-tableau-and-stop card-d0-s2-v1 pile-1 pile-0 (0)
+make-movable-ignore-pile pile-1 (0)
+move-to-card card-d0-s2-v0 pile-2 card-d0-s2-v1 pile-0 (1)
+change-tableau-and-stop card-d0-s2-v0 pile-2 pile-0 (0)
+make-movable-ignore-pile pile-2 (0)
+start-collecting-deck card-d0-s2-v0 (1)
+collect-card card-d0-s2-v0 card-d0-s2-v1 pile-0 (0)
+collect-card card-d0-s2-v1 card-d0-s2-v2 pile-0 (0)
+finish-collecting-deck card-d0-s2-v2 pile-0 pile-0 (0)
+[t=0.087964s, 17424 KB] Plan length: 67 step(s).
+[t=0.087964s, 17424 KB] Plan cost: 16
+[t=0.087964s, 17424 KB] Expanded 12211 state(s).
+[t=0.087964s, 17424 KB] Reopened 0 state(s).
+[t=0.087964s, 17424 KB] Evaluated 12740 state(s).
+[t=0.087964s, 17424 KB] Evaluations: 12740
+[t=0.087964s, 17424 KB] Generated 13799 state(s).
+[t=0.087964s, 17424 KB] Dead ends: 0 state(s).
+[t=0.087964s, 17424 KB] Expanded until last jump: 10878 state(s).
+[t=0.087964s, 17424 KB] Reopened until last jump: 0 state(s).
+[t=0.087964s, 17424 KB] Evaluated until last jump: 11602 state(s).
+[t=0.087964s, 17424 KB] Generated until last jump: 12484 state(s).
+[t=0.087964s, 17424 KB] Number of registered states: 12740
+[t=0.087964s, 17424 KB] Int hash set load factor: 12740/16384 = 0.777588
+[t=0.087964s, 17424 KB] Int hash set resizes: 14
+[t=0.087964s, 17424 KB] Search time: 0.055984s
+[t=0.087964s, 17424 KB] Total time: 0.087964s
+Solution found.
+Peak memory: 17424 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 0.93s

@@ -1,0 +1,480 @@
+== noaxioms opt p01 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 170
+Translator derived variables: 0
+Translator facts: 454
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2870
+Translator axioms: 0
+Translator task size: 44385
+Translator peak memory: 54396 KB
+search exit code: 0
+
+== noaxioms opt p01 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 170
+Translator derived variables: 0
+Translator facts: 454
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2870
+Translator axioms: 0
+Translator task size: 44385
+Translator peak memory: 53372 KB
+search exit code: 0
+
+== axioms opt p01 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 18
+Translator variables: 104
+Translator derived variables: 48
+Translator facts: 322
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 1594
+Translator axioms: 299
+Translator task size: 19694
+Translator peak memory: 42384 KB
+search exit code: 0
+
+== axioms opt p01 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 18
+Translator variables: 104
+Translator derived variables: 48
+Translator facts: 322
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 1594
+Translator axioms: 299
+Translator task size: 19694
+Translator peak memory: 42384 KB
+search exit code: 0
+
+== noaxioms opt p03 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 316
+Translator derived variables: 0
+Translator facts: 893
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 9645
+Translator axioms: 0
+Translator task size: 148112
+Translator peak memory: 106228 KB
+search exit code: 0
+
+== noaxioms opt p03 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 316
+Translator derived variables: 0
+Translator facts: 893
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 9645
+Translator axioms: 0
+Translator task size: 148112
+Translator peak memory: 106228 KB
+search exit code: 0
+
+== axioms opt p03 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 32
+Translator variables: 189
+Translator derived variables: 100
+Translator facts: 639
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5255
+Translator axioms: 876
+Translator task size: 64318
+Translator peak memory: 65328 KB
+search exit code: 0
+
+== axioms opt p03 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 32
+Translator variables: 189
+Translator derived variables: 100
+Translator facts: 639
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 5255
+Translator axioms: 876
+Translator task size: 64318
+Translator peak memory: 64304 KB
+search exit code: 0
+
+== noaxioms opt p05 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 494
+Translator derived variables: 0
+Translator facts: 1460
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 22345
+Translator axioms: 0
+Translator task size: 330751
+Translator peak memory: 192360 KB
+search exit code: 23
+
+== noaxioms opt p05 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 494
+Translator derived variables: 0
+Translator facts: 1460
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 22345
+Translator axioms: 0
+Translator task size: 330751
+Translator peak memory: 192460 KB
+search exit code: 23
+
+== axioms opt p05 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 50
+Translator variables: 290
+Translator derived variables: 168
+Translator facts: 1052
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 11097
+Translator axioms: 1927
+Translator task size: 135404
+Translator peak memory: 101516 KB
+search exit code: 23
+
+== axioms opt p05 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 50
+Translator variables: 290
+Translator derived variables: 168
+Translator facts: 1052
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 11097
+Translator axioms: 1927
+Translator task size: 135404
+Translator peak memory: 100496 KB
+search exit code: 23
+
+== noaxioms opt p07 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 170
+Translator derived variables: 0
+Translator facts: 460
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2866
+Translator axioms: 0
+Translator task size: 42507
+Translator peak memory: 53272 KB
+search exit code: 0
+
+== noaxioms opt p07 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 170
+Translator derived variables: 0
+Translator facts: 460
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2866
+Translator axioms: 0
+Translator task size: 42507
+Translator peak memory: 53272 KB
+search exit code: 0
+
+== axioms opt p07 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 18
+Translator variables: 104
+Translator derived variables: 48
+Translator facts: 328
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 1516
+Translator axioms: 325
+Translator task size: 18814
+Translator peak memory: 41172 KB
+search exit code: 0
+
+== axioms opt p07 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 18
+Translator variables: 104
+Translator derived variables: 48
+Translator facts: 328
+Translator goal facts: 17
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 1516
+Translator axioms: 325
+Translator task size: 18814
+Translator peak memory: 41172 KB
+search exit code: 0
+
+== noaxioms opt p09 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 316
+Translator derived variables: 0
+Translator facts: 904
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 9443
+Translator axioms: 0
+Translator task size: 138555
+Translator peak memory: 101908 KB
+search exit code: 0
+
+== noaxioms opt p09 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 316
+Translator derived variables: 0
+Translator facts: 904
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 9443
+Translator axioms: 0
+Translator task size: 138555
+Translator peak memory: 101908 KB
+search exit code: 0
+
+== axioms opt p09 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 32
+Translator variables: 189
+Translator derived variables: 100
+Translator facts: 650
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 4839
+Translator axioms: 936
+Translator task size: 59445
+Translator peak memory: 61904 KB
+search exit code: 0
+
+== axioms opt p09 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 32
+Translator variables: 189
+Translator derived variables: 100
+Translator facts: 650
+Translator goal facts: 26
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 4839
+Translator axioms: 936
+Translator task size: 59445
+Translator peak memory: 62928 KB
+search exit code: 0
+
+== noaxioms opt p11 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 494
+Translator derived variables: 0
+Translator facts: 1452
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 22863
+Translator axioms: 0
+Translator task size: 337704
+Translator peak memory: 197668 KB
+search exit code: 23
+
+== noaxioms opt p11 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 494
+Translator derived variables: 0
+Translator facts: 1452
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 22863
+Translator axioms: 0
+Translator task size: 337704
+Translator peak memory: 197668 KB
+search exit code: 23
+
+== axioms opt p11 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 50
+Translator variables: 290
+Translator derived variables: 168
+Translator facts: 1044
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 11807
+Translator axioms: 1911
+Translator task size: 143972
+Translator peak memory: 105728 KB
+search exit code: 23
+
+== axioms opt p11 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 50
+Translator variables: 290
+Translator derived variables: 168
+Translator facts: 1044
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 11807
+Translator axioms: 1911
+Translator task size: 143972
+Translator peak memory: 105856 KB
+search exit code: 23
+
+== noaxioms opt p13 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 704
+Translator derived variables: 0
+Translator facts: 2123
+Translator goal facts: 44
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 44157
+Translator axioms: 0
+Translator task size: 636088
+Translator peak memory: 339416 KB
+search exit code: 23
+
+== noaxioms opt p13 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 704
+Translator derived variables: 0
+Translator facts: 2123
+Translator goal facts: 44
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 44157
+Translator axioms: 0
+Translator task size: 636088
+Translator peak memory: 339416 KB
+search exit code: 23
+
+== axioms opt p13 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 72
+Translator variables: 407
+Translator derived variables: 252
+Translator facts: 1529
+Translator goal facts: 44
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 21193
+Translator axioms: 3436
+Translator task size: 257780
+Translator peak memory: 160432 KB
+search exit code: 23
+
+== axioms opt p13 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 72
+Translator variables: 407
+Translator derived variables: 252
+Translator facts: 1529
+Translator goal facts: 44
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 21193
+Translator axioms: 3436
+Translator task size: 257780
+Translator peak memory: 159408 KB
+search exit code: 23
+
+== noaxioms opt p15 blind ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 222
+Translator derived variables: 0
+Translator facts: 614
+Translator goal facts: 21
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 4387
+Translator axioms: 0
+Translator task size: 63661
+Translator peak memory: 63564 KB
+search exit code: 0
+
+== noaxioms opt p15 lmcut ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 222
+Translator derived variables: 0
+Translator facts: 614
+Translator goal facts: 21
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 4387
+Translator axioms: 0
+Translator task size: 63661
+Translator peak memory: 63564 KB
+search exit code: 0
+
+== axioms opt p15 blind ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 18
+Translator variables: 136
+Translator derived variables: 64
+Translator facts: 442
+Translator goal facts: 21
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2419
+Translator axioms: 499
+Translator task size: 30042
+Translator peak memory: 47856 KB
+search exit code: 0
+
+== axioms opt p15 hmax ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 18
+Translator variables: 136
+Translator derived variables: 64
+Translator facts: 442
+Translator goal facts: 21
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2419
+Translator axioms: 499
+Translator task size: 30042
+Translator peak memory: 46832 KB
+search exit code: 0
+

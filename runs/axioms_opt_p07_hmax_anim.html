@@ -1,0 +1,444 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Spider plan</title><style>body{font-family:monospace;background:#222;color:#eee;}pre{background:#111;padding:1em;border-radius:6px;}.frame{display:none;} .frame.active{display:block;}button{font-size:1em;padding:.3em .8em;margin:.2em;}</style></head><body><h2>Spider plan: /home/buser/KRP_Project/runs/axioms_opt_p07_hmax.plan</h2><button onclick='step(-1)'>&laquo; prev</button><button onclick='step(1)'>next &raquo;</button><span id='idx'></span><br><div class='frame active'><pre>step   0: (initial state)
+phase: idle
+
+  pile-0  :  1H  1H
+  pile-1  :  1S  0S
+  pile-2  :  2S  1S
+
+  deal-0  :  2H  0H  0H
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   1: (move-to-card card-d1-s0-v0 card-d1-s0-v1 card-d0-s0-v1 pile-2)
+phase: idle
+
+  pile-0  :  1H  1H
+  pile-1  :  1S
+  pile-2  :  2S  1S  0S
+
+  deal-0  :  2H  0H  0H
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   2: (start-dealing )
+phase: dealing
+
+  pile-0  :  1H  1H
+  pile-1  :  1S
+  pile-2  :  2S  1S  0S
+
+  deal-0  :  2H  0H  0H
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   3: (deal-card card-d0-s1-v0 card-d1-s1-v0 deal-0 card-d0-s1-v1 pile-0)
+phase: dealing
+
+  pile-0  :  1H  1H  0H
+  pile-1  :  1S
+  pile-2  :  2S  1S  0S
+
+  deal-0  :  2H  0H
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   4: (deal-card card-d1-s1-v0 card-d1-s1-v2 deal-0 card-d1-s0-v1 pile-1)
+phase: dealing
+
+  pile-0  :  1H  1H  0H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S
+
+  deal-0  :  2H
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   5: (deal-card card-d1-s1-v2 deal-0 deal-0 card-d1-s0-v0 pile-2)
+phase: dealing
+
+  pile-0  :  1H  1H  0H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S  2H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   6: (finish-dealing deal-0 deal-1)
+phase: idle
+
+  pile-0  :  1H  1H  0H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S  2H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   7: (move-to-card card-d0-s1-v1 card-d1-s1-v1 card-d1-s1-v2 pile-2)
+phase: idle
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S  2H  1H  0H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   8: (start-collecting-deck card-d0-s1-v0)
+phase: collecting
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S  2H  1H  0H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 0 / 12</pre></div>
+<div class='frame'><pre>step   9: (collect-card card-d0-s1-v0 card-d0-s1-v1 pile-2)
+phase: collecting
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S  2H  1H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 1 / 12</pre></div>
+<div class='frame'><pre>step  10: (collect-card card-d0-s1-v1 card-d1-s1-v2 pile-2)
+phase: collecting
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S  2H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 2 / 12</pre></div>
+<div class='frame'><pre>step  11: (finish-collecting-deck card-d1-s1-v2 card-d1-s0-v0 pile-2)
+phase: idle
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 3 / 12</pre></div>
+<div class='frame'><pre>step  12: (start-collecting-deck card-d1-s0-v0)
+phase: collecting
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S  0S
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 3 / 12</pre></div>
+<div class='frame'><pre>step  13: (collect-card card-d1-s0-v0 card-d0-s0-v1 pile-2)
+phase: collecting
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S  1S
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 4 / 12</pre></div>
+<div class='frame'><pre>step  14: (collect-card card-d0-s0-v1 card-d0-s0-v2 pile-2)
+phase: collecting
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  :  2S
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 5 / 12</pre></div>
+<div class='frame'><pre>step  15: (finish-collecting-deck card-d0-s0-v2 pile-2 pile-2)
+phase: idle
+
+  pile-0  :  1H
+  pile-1  :  1S  0H
+  pile-2  : (empty)
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  16: (move-to-card card-d1-s1-v0 card-d1-s0-v1 card-d1-s1-v1 pile-0)
+phase: idle
+
+  pile-0  :  1H  0H
+  pile-1  :  1S
+  pile-2  : (empty)
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  17: (move-to-tableau card-d1-s1-v1 pile-0 pile-2)
+phase: idle
+
+  pile-0  : (empty)
+  pile-1  :  1S
+  pile-2  :  1H  0H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  18: (move-to-tableau card-d1-s0-v1 pile-1 pile-0)
+phase: idle
+
+  pile-0  :  1S
+  pile-1  : (empty)
+  pile-2  :  1H  0H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  19: (move-to-tableau card-d1-s1-v0 card-d1-s1-v1 pile-1)
+phase: idle
+
+  pile-0  :  1S
+  pile-1  :  0H
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  20: (start-dealing )
+phase: dealing
+
+  pile-0  :  1S
+  pile-1  :  0H
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S  0S
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  21: (deal-card card-d0-s0-v0 card-d1-s0-v2 deal-1 card-d1-s0-v1 pile-0)
+phase: dealing
+
+  pile-0  :  1S  0S
+  pile-1  :  0H
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  :  2H  2S
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  22: (deal-card card-d1-s0-v2 card-d0-s1-v2 deal-1 card-d1-s1-v0 pile-1)
+phase: dealing
+
+  pile-0  :  1S  0S
+  pile-1  :  0H  2S
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  :  2H
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  23: (deal-card card-d0-s1-v2 deal-1 deal-1 card-d1-s1-v1 pile-2)
+phase: dealing
+
+  pile-0  :  1S  0S
+  pile-1  :  0H  2S
+  pile-2  :  1H  2H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  24: (finish-dealing deal-1 deal-2)
+phase: idle
+
+  pile-0  :  1S  0S
+  pile-1  :  0H  2S
+  pile-2  :  1H  2H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  25: (move-to-card card-d1-s0-v1 pile-0 card-d1-s0-v2 pile-1)
+phase: idle
+
+  pile-0  : (empty)
+  pile-1  :  0H  2S  1S  0S
+  pile-2  :  1H  2H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  26: (move-to-tableau card-d0-s1-v2 card-d1-s1-v1 pile-0)
+phase: idle
+
+  pile-0  :  2H
+  pile-1  :  0H  2S  1S  0S
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  27: (start-collecting-deck card-d0-s0-v0)
+phase: collecting
+
+  pile-0  :  2H
+  pile-1  :  0H  2S  1S  0S
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 6 / 12</pre></div>
+<div class='frame'><pre>step  28: (collect-card card-d0-s0-v0 card-d1-s0-v1 pile-1)
+phase: collecting
+
+  pile-0  :  2H
+  pile-1  :  0H  2S  1S
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 7 / 12</pre></div>
+<div class='frame'><pre>step  29: (collect-card card-d1-s0-v1 card-d1-s0-v2 pile-1)
+phase: collecting
+
+  pile-0  :  2H
+  pile-1  :  0H  2S
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 8 / 12</pre></div>
+<div class='frame'><pre>step  30: (finish-collecting-deck card-d1-s0-v2 card-d1-s1-v0 pile-1)
+phase: idle
+
+  pile-0  :  2H
+  pile-1  :  0H
+  pile-2  :  1H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 9 / 12</pre></div>
+<div class='frame'><pre>step  31: (move-to-card card-d1-s1-v0 pile-1 card-d1-s1-v1 pile-2)
+phase: idle
+
+  pile-0  :  2H
+  pile-1  : (empty)
+  pile-2  :  1H  0H
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 9 / 12</pre></div>
+<div class='frame'><pre>step  32: (move-to-card card-d1-s1-v1 pile-2 card-d0-s1-v2 pile-0)
+phase: idle
+
+  pile-0  :  2H  1H  0H
+  pile-1  : (empty)
+  pile-2  : (empty)
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 9 / 12</pre></div>
+<div class='frame'><pre>step  33: (start-collecting-deck card-d1-s1-v0)
+phase: collecting
+
+  pile-0  :  2H  1H  0H
+  pile-1  : (empty)
+  pile-2  : (empty)
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 9 / 12</pre></div>
+<div class='frame'><pre>step  34: (collect-card card-d1-s1-v0 card-d1-s1-v1 pile-0)
+phase: collecting
+
+  pile-0  :  2H  1H
+  pile-1  : (empty)
+  pile-2  : (empty)
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 10 / 12</pre></div>
+<div class='frame'><pre>step  35: (collect-card card-d1-s1-v1 card-d0-s1-v2 pile-0)
+phase: collecting
+
+  pile-0  :  2H
+  pile-1  : (empty)
+  pile-2  : (empty)
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 11 / 12</pre></div>
+<div class='frame'><pre>step  36: (finish-collecting-deck card-d0-s1-v2 pile-0 pile-0)
+phase: idle
+
+  pile-0  : (empty)
+  pile-1  : (empty)
+  pile-2  : (empty)
+
+  deal-0  : (empty)
+  deal-1  : (empty)
+  deal-2  : (empty)
+
+  discard : 12 / 12</pre></div><script>let i=0,n=document.querySelectorAll('.frame').length;function show(k){document.querySelectorAll('.frame').forEach((f,j)=>f.classList.toggle('active',j===k));document.getElementById('idx').textContent=k+'/'+(n-1);}function step(d){i=Math.max(0,Math.min(n-1,i+d));show(i);}document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='j')step(1);if(e.key==='ArrowLeft'||e.key==='k')step(-1);});show(0);</script></body></html>

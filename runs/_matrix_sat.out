@@ -1,0 +1,150 @@
+== noaxioms sat p01 lama ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 494
+Translator derived variables: 0
+Translator facts: 1454
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 22438
+Translator axioms: 0
+Translator task size: 334718
+Translator peak memory: 194504 KB
+search exit code: 23
+
+== axioms sat p01 lama ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 50
+Translator variables: 290
+Translator derived variables: 168
+Translator facts: 1046
+Translator goal facts: 35
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 11352
+Translator axioms: 1897
+Translator task size: 138428
+Translator peak memory: 102676 KB
+search exit code: 23
+
+== noaxioms sat p03 lama ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 704
+Translator derived variables: 0
+Translator facts: 2132
+Translator goal facts: 44
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 43267
+Translator axioms: 0
+Translator task size: 624511
+Translator peak memory: 333928 KB
+search exit code: 23
+
+== axioms sat p03 lama ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 72
+Translator variables: 407
+Translator derived variables: 252
+Translator facts: 1538
+Translator goal facts: 44
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 19993
+Translator axioms: 3458
+Translator task size: 243315
+Translator peak memory: 156944 KB
+search exit code: 23
+
+== noaxioms sat p05 lama ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 1036
+Translator derived variables: 0
+Translator facts: 3210
+Translator goal facts: 54
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 103363
+Translator axioms: 0
+Translator task size: 1452601
+Translator peak memory: 739024 KB
+search exit code: 23
+
+== axioms sat p05 lama ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 128
+Translator variables: 585
+Translator derived variables: 396
+Translator facts: 2308
+Translator goal facts: 54
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 43663
+Translator axioms: 6924
+Translator task size: 529043
+Translator peak memory: 291028 KB
+search exit code: 23
+
+== noaxioms sat p07 lama ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 376
+Translator derived variables: 0
+Translator facts: 1081
+Translator goal facts: 30
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 12057
+Translator axioms: 0
+Translator task size: 180216
+Translator peak memory: 121388 KB
+search exit code: 23
+
+== axioms sat p07 lama ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 32
+Translator variables: 225
+Translator derived variables: 120
+Translator facts: 779
+Translator goal facts: 30
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 6455
+Translator axioms: 1144
+Translator task size: 79166
+Translator peak memory: 72724 KB
+search exit code: 23
+
+== noaxioms sat p09 lama ==
+Generated 129 rules.
+Translator axioms removed by simplifying: 0
+Translator variables: 628
+Translator derived variables: 0
+Translator facts: 1884
+Translator goal facts: 40
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 38647
+Translator axioms: 0
+Translator task size: 556651
+Translator peak memory: 300720 KB
+search exit code: 23
+
+== axioms sat p09 lama ==
+Generated 85 rules.
+Translator axioms removed by simplifying: 72
+Translator variables: 363
+Translator derived variables: 224
+Translator facts: 1354
+Translator goal facts: 40
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 18553
+Translator axioms: 2998
+Translator task size: 225623
+Translator peak memory: 147296 KB
+search exit code: 23
+
