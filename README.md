@@ -5,11 +5,11 @@ Project for the *Knowledge Representation* seminar HS25 at the University of Bas
 
 ## Overview
 
-The IPC-2018 *Spider* PDDL domain models a single-suit variant of Spider
-Solitaire. Movement and collection actions depend on cascading properties —
-whether a card is movable, which tableau a card belongs to — that the natural
-encoding would express as derived predicates. Because the IPC-2018 STRIPS track
-forbade axioms, the published domain instead simulates them with auxiliary
+The IPC-2018 *Spider* PDDL domain models a variant of Spider
+Solitaire. Movement and collection actions depend on cascading properties,
+whether a card is movable, which tableau a card belongs to, that an
+encoding could express as derived predicates. But because the IPC-2018 track
+did it without axioms, the published domain instead simulates them with auxiliary
 fluents (`currently-updating-*`, `make-movable`, `make-part-of-tableau`, …) and
 a chain of zero-cost propagation actions that walks over the affected pile
 after every real move.
@@ -26,11 +26,11 @@ and wall-clock time, and which configurations of Fast Downward benefit most.
 .
 ├── Spider_NoAxioms/        published IPC-2018 encoding
 │   ├── domain.pddl         conditional-effect machinery + propagation actions
-│   ├── p01.pddl            root sanity instance
+│   ├── p01.pddl            quick check instance before letting the planner run on a bigger instance
 │   └── instances/          opt_p01..p15 (8 instances) + sat_p01..p09 (5)
 ├── Spider_Axioms/          axiom-based rewrite
 │   ├── domain.pddl         two derived predicates, no propagation actions
-│   ├── i01.pddl            minimal sanity instance (optimal cost = 4)
+│   ├── i01.pddl            also quick check instance before letting the planner run on a bigger instance
 │   └── instances/          mirrors of the no-axioms instances
 ├── scripts/
 │   ├── run_matrix.sh       drives Fast Downward across the experimental matrix
@@ -42,37 +42,19 @@ and wall-clock time, and which configurations of Fast Downward benefit most.
 ├── runs/                   Fast Downward .log + .plan output, one pair per cell
 ├── results/
 │   └── report.md           auto-built comparison report
-└── references/             course handouts and the PDF papers cited in the report
 ```
 
 ## The two encodings
 
-`Spider_NoAxioms/domain.pddl` is byte-identical to the IPC-2018 release.[^1]
+`Spider_NoAxioms/domain.pddl` is identical to the IPC-2018 release.[^1]
 Each real action (`move-to-card`, `deal-card`, `start-collecting-deck`, …) sets
 a `currently-updating-*` flag and plants a `make-*` marker on one card; a chain
 of cost-0 actions then propagates the update along the affected pile while
 every other action is blocked. This serialises the propagation and inflates
-plan length, but keeps the domain in STRIPS + conditional effects, which is
-what the IPC track required.
+plan length, but can handle the domain without axioms.
 
 `Spider_Axioms/domain.pddl` introduces two derived predicates and removes the
 propagation machinery:
-
-```pddl
-(:derived (movable ?c - card)
-    (and (in-play ?c)
-         (or (clear ?c)
-             (exists (?above - card)
-                 (and (on ?above ?c)
-                      (movable ?above)
-                      (CAN-CONTINUE-GROUP ?above ?c))))))
-
-(:derived (part-of-tableau ?c - card ?t - tableau)
-    (or (on ?c ?t)
-        (exists (?y - card)
-            (and (on ?c ?y)
-                 (part-of-tableau ?y ?t)))))
-```
 
 Both axioms are positively recursive in a single stratum (no negation in the
 body, no cross-stratum dependency). Eight propagation actions, the
@@ -132,18 +114,18 @@ this project, are cited from the textbook chapter rather than included as
 PDFs.
 
 - Haslum, Lipovetzky, Magazzeni, Muise. *An Introduction to PDDL.*
-  Morgan & Claypool, 2019. — chapter 3 covers conditional effects, axioms,
+  Morgan & Claypool, 2019., chapter 3 covers conditional effects, axioms,
   and the expressiveness theorems.
-- Ivankovic, Haslum. *Optimal Planning with Axioms.* IJCAI 2015. —
+- Ivankovic, Haslum. *Optimal Planning with Axioms.* IJCAI 2015.,
   axiom-aware admissible heuristics; empirical case for blind search on
   axiomatic encodings.
 - Gerevini, Percassi, Scala. *An Effective Polynomial Technique for Compiling
   Conditional Effects.* AAAI 2024.
-- Espasa et al. *Challenges in Modelling and Solving Plotting with PDDL.* —
+- Espasa et al. *Challenges in Modelling and Solving Plotting with PDDL.*,
   same modelling pattern (cascading state updates) in a different domain;
   documents Fast Downward's grounding bottleneck on this class of problem.
 - Corrêa. *Planning with Different Representations.* PhD thesis, University
-  of Basel, 2024. — background on lifted planning and grounding.
+  of Basel, 2024., background on lifted planning and grounding.
 
 [^1]: <https://github.com/aibasel/downward-benchmarks/blob/master/spider-opt18-strips/domain.pddl>
 [^2]: <https://www.fast-downward.org/>
