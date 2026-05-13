@@ -106,26 +106,6 @@ Full numbers and per-instance breakdowns in [`results/report.md`](results/report
 - **Open coverage gap.** `p05`, `p11`, and `p13` time out in every optimal
   cell on both encodings.
 
-## References
-
-The papers below sit in `references/Documents/`. Nebel (2000) and Thiébaux,
-Hoffmann & Nebel (2005), which provide the compilability theorems framing
-this project, are cited from the textbook chapter rather than included as
-PDFs.
-
-- Haslum, Lipovetzky, Magazzeni, Muise. *An Introduction to PDDL.*
-  Morgan & Claypool, 2019., chapter 3 covers conditional effects, axioms,
-  and the expressiveness theorems.
-- Ivankovic, Haslum. *Optimal Planning with Axioms.* IJCAI 2015.,
-  axiom-aware admissible heuristics; empirical case for blind search on
-  axiomatic encodings.
-- Gerevini, Percassi, Scala. *An Effective Polynomial Technique for Compiling
-  Conditional Effects.* AAAI 2024.
-- Espasa et al. *Challenges in Modelling and Solving Plotting with PDDL.*,
-  same modelling pattern (cascading state updates) in a different domain;
-  documents Fast Downward's grounding bottleneck on this class of problem.
-- Corrêa. *Planning with Different Representations.* PhD thesis, University
-  of Basel, 2024., background on lifted planning and grounding.
 
 [^1]: <https://github.com/aibasel/downward-benchmarks/blob/master/spider-opt18-strips/domain.pddl>
 [^2]: <https://www.fast-downward.org/>
